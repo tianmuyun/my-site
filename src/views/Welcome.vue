@@ -4,8 +4,8 @@ import { RouterLink } from 'vue-router'
 
 <template>
   <div class="cover">
-    <h1>欢迎来到tianmuyun的主页</h1>
-    <RouterLink to="/main" class="exploreBtn">开始探索</RouterLink>
+    <h1>Welcome to My Site</h1>
+    <RouterLink to="/" class="exploreBtn">start</RouterLink>
   </div>
 </template>
 

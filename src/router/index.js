@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from "../views/Home.vue"
-import Main from "../views/Main.vue"
+import Index from '../views/Index.vue'
+import Welcome from "../views/Welcome.vue"
+import Personal from "../views/Personal.vue"
 import Genshin from '../views/Genshin.vue'
 import NotFound from '../views/NotFound.vue'
 import Post from '../views/Post.vue'
@@ -11,13 +12,22 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      name: 'index',
+      component: Index
     },
     {
-      path: '/main',
-      name: 'main',
-      component: Main
+      path: '/index',
+      redirect: '/'
+    },
+    {
+      path: '/welcome',
+      name: 'welcome',
+      component: Welcome
+    },
+    {
+      path: '/personal',
+      name: 'personal',
+      component: Personal
     },
     {
       path: '/post',

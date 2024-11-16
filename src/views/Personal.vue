@@ -1,30 +1,25 @@
-<script setup>
-import { RouterLink } from 'vue-router'
-</script>
-
 <template>
   <header>
-    <h1>欢迎来到tianmuyun的个人主页</h1>
+    <h1>欢迎来到XXX的个人主页</h1>
   </header>
   <div class="container">
     <div class="card">
-      <h2>关于我</h2>
+      <h2>关于XXX</h2>
       <p>喵喵喵</p>
     </div>
     <div class="card">
       <h2>项目</h2>
-      <p>项目 0 : <RouterLink to="/test">Test</RouterLink></p>
-      <p>项目 1 : <RouterLink to="/genshin">Genshin</RouterLink></p>
-      <p>项目 2 : <RouterLink to="/post">Post</RouterLink></p>
+      <p>项目 1 : XXX</p>
+      <p>项目 2 : XXX</p>
     </div>
     <div class="card">
       <h2>联系我</h2>
-      <p>电子邮件: name@example.com</p>
-      <p>社交媒体: GitHub</p>
+      <p>电子邮件: xxx@xxx.com</p>
+      <p>社交媒体: xxx</p>
     </div>
   </div>
   <footer>
-    <p>© 2024 tianmuyun. 版权所有.</p>
+    <p>© 2024 xxx. 版权所有.</p>
   </footer>
 </template>
 
