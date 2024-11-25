@@ -10,7 +10,7 @@ import { RouterLink } from 'vue-router'
         <li><RouterLink to="/notfound" class="link">NotFound</RouterLink></li>
         <li><RouterLink to="/genshin" class="link">Genshin</RouterLink></li>
         <li><RouterLink to="/post" class="link">Post</RouterLink></li>
-        <li><RouterLink to="/test" class="link">Test</RouterLink></li>
+        <li><RouterLink to="/towebp" class="link">Towebp</RouterLink></li>
 
     </ul>
 </template>
