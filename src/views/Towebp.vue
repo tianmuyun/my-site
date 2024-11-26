@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <h1>图片格式转换 (PNG/JPG to WebP)</h1>
+    <h1>PNG/JPG to WebP</h1>
   </div>
   <div class="main">
     <div class="img" v-if="webpUrl">

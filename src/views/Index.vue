@@ -1,24 +1,38 @@
 <script setup>
-import { RouterLink } from 'vue-router'
+import { RouterLink, useRouter } from "vue-router";
+import Ruler from "../components/Ruler.vue";
+const routes = useRouter().options.routes;
 </script>
 
 <template>
-    <h1>URL Navigation</h1>
-    <ul>
-        <li><RouterLink to="/welcome" class="link">Welcome</RouterLink></li>
-        <li><RouterLink to="/personal" class="link">Personal</RouterLink></li>
-        <li><RouterLink to="/notfound" class="link">NotFound</RouterLink></li>
-        <li><RouterLink to="/genshin" class="link">Genshin</RouterLink></li>
-        <li><RouterLink to="/post" class="link">Post</RouterLink></li>
-        <li><RouterLink to="/towebp" class="link">Towebp</RouterLink></li>
-
-    </ul>
+  <Ruler />
+  <p class="title">RouterList</p>
+  <div v-for="route in routes" :key="route.path">
+    <RouterLink :to="route.path" class="link">{{
+      route.name || "Unnamed Route"
+    }}</RouterLink>
+  </div>
 </template>
 
 <style scoped>
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 20px;
+}
+
 .link {
-    font-size: 24px;
-    color: blue;
-    text-decoration: none;
+  margin: 20px;
+  font-size: 24px;
+  color: blue;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
 }
 </style>
