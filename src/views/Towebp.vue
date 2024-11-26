@@ -88,7 +88,7 @@ const convertToWebP = (image) => {
 const downloadWebP = () => {
   const link = document.createElement("a");
   link.href = webpUrl.value;
-  link.download = fileName.value + ".webp";
+  link.download = fileName.value.match(/(.*)\.(jpg|png|gif)/)[1]; + ".webp";
   link.click();
 };
 </script>
