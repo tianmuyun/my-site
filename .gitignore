@@ -1,3 +1,5 @@
-node_modules/
-dist/
-deploy.sh
+/node_modules/
+/dist/
+
+*.sh
+*.bat
