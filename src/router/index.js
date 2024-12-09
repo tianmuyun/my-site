@@ -6,7 +6,7 @@ import Genshin from '../views/Genshin.vue'
 import NotFound from '../views/NotFound.vue'
 import Post from '../views/Post.vue'
 import Towebp from '../views/Towebp.vue'
-
+import Clock from '../views/Clock.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -39,6 +39,11 @@ const router = createRouter({
       path: '/towebp',
       name: 'towebp',
       component: Towebp
+    },
+    {
+      path: '/clock',
+      name: 'clock',
+      component: Clock
     },
     {
       path: '/:catchAll(.*)',

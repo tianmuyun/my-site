@@ -19,13 +19,11 @@ const routes = useRouter().options.routes;
   padding: 0;
   margin: 0;
 }
-
 .title {
   font-size: 48px;
   font-weight: bold;
   margin: 20px;
 }
-
 .link {
   margin: 20px;
   font-size: 24px;
